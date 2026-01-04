@@ -1,0 +1,328 @@
+2025-12-26 16:51:22.874 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 16:51:22.876 [main] INFO  com.viettel.sync.app.Main -        BẮT ĐẦU TOOL ĐỒNG BỘ DỮ LIỆU       
+2025-12-26 16:51:22.876 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 16:51:22.878 [main] INFO  com.viettel.sync.app.Main - Schema Source: DATALAKE_CONFIG
+2025-12-26 16:51:22.879 [main] INFO  com.viettel.sync.app.Main - Schema Target: DATALAKE_CONFIG_TD
+2025-12-26 16:51:23.353 [main] INFO  c.viettel.sync.service.SyncService - ========== BẮT ĐẦU ĐỒNG BỘ (FINAL VERSION) ==========
+2025-12-26 16:51:23.354 [main] INFO  c.viettel.sync.service.SyncService - --- 1. SYNC TIME PARAM ---
+2025-12-26 16:51:23.531 [main] INFO  c.viettel.sync.service.SyncService - --- 2. SYNC CONNECTIONS ---
+2025-12-26 16:51:23.728 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ PHÁT HIỆN 55 XUNG ĐỘT/VẤN ĐỀ:
+2025-12-26 16:51:23.729 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 921: JDBC Auth Diff
+2025-12-26 16:51:23.729 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 441: FTP Host Diff: ftp_10.60.94.137 vs ftp 137 os_bccs_report namdx
+2025-12-26 16:51:23.729 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 922: FTP Host Diff: ftp_10.254.136.122 vs ftp 
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1027: FTP Host Diff: ftp_10.207.155.99:8889,10.207.155.100:8889,10.207.155.101:8889,10.207.155.102:8889 vs ELK
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1028: FTP Host Diff: ftp_10.60.170.37 vs FTP
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1030: FTP Host Diff: ftp_10.207.189.179 vs FTP
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1031: FTP Host Diff: ftp_10.240.184.51 vs FTP
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1032: FTP Host Diff: ftp_10.254.129.93 vs FTP
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1033: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1034: FTP Host Diff: ftp_10.255.62.21 vs FTP
+2025-12-26 16:51:23.730 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1035: FTP Host Diff: ftp_10.30.164.17 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1036: FTP Host Diff: ftp_10.58.15.36 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1037: FTP Host Diff: ftp_10.58.3.80 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1039: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1040: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1041: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1042: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1043: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1044: FTP Host Diff: ftp_10.60.94.222 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1045: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1046: FTP Host Diff: ftp_10.254.150.94 vs FTP
+2025-12-26 16:51:23.731 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1259: FTP Host Diff: ftp_10.240.184.52 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1260: FTP Host Diff: ftp_10.240.202.167 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1261: FTP Host Diff: ftp_10.240.202.173 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1262: FTP Host Diff: ftp_10.240.202.192 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1263: FTP Host Diff: ftp_10.240.202.4 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1264: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1265: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1266: FTP Host Diff: ftp_10.255.62.22 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1267: FTP Host Diff: ftp_10.58.15.37 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1268: FTP Host Diff: ftp_10.58.3.111 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1269: FTP Host Diff: ftp_10.58.4.21 vs FTP
+2025-12-26 16:51:23.732 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1270: FTP Host Diff: ftp_10.58.4.26 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1271: FTP Host Diff: ftp_10.58.4.27 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1272: FTP Host Diff: ftp_10.58.4.32 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1273: FTP Host Diff: ftp_10.58.41.69 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1274: FTP Host Diff: ftp_10.58.46.149 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1275: FTP Host Diff: ftp_10.58.51.31 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1276: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1277: FTP Host Diff: ftp_10.58.4.27 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1278: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1279: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1280: FTP Host Diff: ftp_192.168.226.246 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1281: FTP Host Diff: ftp_192.168.4.210 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1297: FTP Host Diff: ftp_10.240.184.51 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1299: FTP Host Diff: ftp_10.208.67.133 vs FTP
+2025-12-26 16:51:23.733 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1282: FTP Host Diff: ftp_10.60.94.214 vs FTP
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1283: FTP Host Diff: ftp_10.60.94.214 vs FTP
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1258: FTP Host Diff: ftp_10.60.66.234|10.60.66.235|10.60.66.236|10.60.66.241|10.60.66.242|10.60.66.243 vs SFTP SV QOS, trunghn Phòng IP, Băng rộng Cố định và Truyền hình
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1298: FTP Host Diff: ftp_10.60.7.241 vs ftp 10.60.7.241 admin cho luongofo bikt
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1300: FTP Host Diff: ftp_10.254.129.93 vs FTP
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1293: FTP Host Diff: ftp_10.205.97.163 vs FTP
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1294: FTP Host Diff: ftp_10.205.97.164 vs FTP
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1295: FTP Host Diff: ftp_10.73.148.67 vs FTP
+2025-12-26 16:51:23.734 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1296: FTP Host Diff: ftp_10.73.148.68 vs FTP
+2025-12-26 16:51:23.747 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 220 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 16:51:23.747 [main] INFO  c.viettel.sync.service.SyncService -    -> [DELETE] Đã xóa 220 connection cũ.
+2025-12-26 16:51:23.768 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 220 dòng vào bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 16:51:23.768 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT/UPDATE] Đã ghi 220 connection.
+2025-12-26 16:51:23.790 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm safe (chỉ có ở target) [2024, 13, 1229, 15, 2000, 16, 17, 18, 19, 20, 22, 23, 24]
+2025-12-26 16:51:23.791 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm fix [1280, 1281, 1282, 1027, 1283, 1028, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1293, 13, 1294, 1039, 1295, 15, 1040, 1296, 16, 1041, 1297, 17, 1042, 1298, 18, 1043, 1299, 19, 1044, 1300, 20, 1045, 1046, 22, 23, 24, 921, 922, 441, 1229, 2000, 2024, 1258, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279]
+2025-12-26 16:51:23.793 [main] INFO  c.viettel.sync.service.SyncService - ✅ ĐỒNG BỘ THÀNH CÔNG TOÀN BỘ!
+2025-12-26 16:51:23.795 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 16:51:23.795 [main] INFO  com.viettel.sync.app.Main -           KẾT THÚC CHƯƠNG TRÌNH           
+2025-12-26 16:51:23.795 [main] INFO  com.viettel.sync.app.Main -        Tổng thời gian: 922 ms (0.922 giây)
+2025-12-26 16:51:23.796 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:25:35.156 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:25:35.157 [main] INFO  com.viettel.sync.app.Main -        BẮT ĐẦU TOOL ĐỒNG BỘ DỮ LIỆU       
+2025-12-26 17:25:35.157 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:25:35.164 [main] INFO  com.viettel.sync.app.Main - Schema Source: DATALAKE_CONFIG
+2025-12-26 17:25:35.165 [main] INFO  com.viettel.sync.app.Main - Schema Target: DATALAKE_CONFIG_TD
+2025-12-26 17:25:35.698 [main] INFO  c.viettel.sync.service.SyncService - ========== BẮT ĐẦU ĐỒNG BỘ (FINAL VERSION) ==========
+2025-12-26 17:25:35.698 [main] INFO  c.viettel.sync.service.SyncService - --- 1. SYNC TIME PARAM ---
+2025-12-26 17:25:35.873 [main] INFO  c.viettel.sync.service.SyncService - --- 2. SYNC CONNECTIONS ---
+2025-12-26 17:25:36.064 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ PHÁT HIỆN 55 XUNG ĐỘT/VẤN ĐỀ:
+2025-12-26 17:25:36.065 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 921: JDBC Auth Diff
+2025-12-26 17:25:36.065 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 441: FTP Host Diff: ftp_10.60.94.137 vs ftp 137 os_bccs_report namdx
+2025-12-26 17:25:36.065 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 922: FTP Host Diff: ftp_10.254.136.122 vs ftp 
+2025-12-26 17:25:36.065 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1027: FTP Host Diff: ftp_10.207.155.99:8889,10.207.155.100:8889,10.207.155.101:8889,10.207.155.102:8889 vs ELK
+2025-12-26 17:25:36.065 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1028: FTP Host Diff: ftp_10.60.170.37 vs FTP
+2025-12-26 17:25:36.065 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1030: FTP Host Diff: ftp_10.207.189.179 vs FTP
+2025-12-26 17:25:36.065 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1031: FTP Host Diff: ftp_10.240.184.51 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1032: FTP Host Diff: ftp_10.254.129.93 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1033: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1034: FTP Host Diff: ftp_10.255.62.21 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1035: FTP Host Diff: ftp_10.30.164.17 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1036: FTP Host Diff: ftp_10.58.15.36 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1037: FTP Host Diff: ftp_10.58.3.80 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1039: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1040: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1041: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1042: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1043: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1044: FTP Host Diff: ftp_10.60.94.222 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1045: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1046: FTP Host Diff: ftp_10.254.150.94 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1259: FTP Host Diff: ftp_10.240.184.52 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1260: FTP Host Diff: ftp_10.240.202.167 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1261: FTP Host Diff: ftp_10.240.202.173 vs FTP
+2025-12-26 17:25:36.066 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1262: FTP Host Diff: ftp_10.240.202.192 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1263: FTP Host Diff: ftp_10.240.202.4 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1264: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1265: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1266: FTP Host Diff: ftp_10.255.62.22 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1267: FTP Host Diff: ftp_10.58.15.37 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1268: FTP Host Diff: ftp_10.58.3.111 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1269: FTP Host Diff: ftp_10.58.4.21 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1270: FTP Host Diff: ftp_10.58.4.26 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1271: FTP Host Diff: ftp_10.58.4.27 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1272: FTP Host Diff: ftp_10.58.4.32 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1273: FTP Host Diff: ftp_10.58.41.69 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1274: FTP Host Diff: ftp_10.58.46.149 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1275: FTP Host Diff: ftp_10.58.51.31 vs FTP
+2025-12-26 17:25:36.067 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1276: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1277: FTP Host Diff: ftp_10.58.4.27 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1278: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1279: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1280: FTP Host Diff: ftp_192.168.226.246 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1281: FTP Host Diff: ftp_192.168.4.210 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1297: FTP Host Diff: ftp_10.240.184.51 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1299: FTP Host Diff: ftp_10.208.67.133 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1282: FTP Host Diff: ftp_10.60.94.214 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1283: FTP Host Diff: ftp_10.60.94.214 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1258: FTP Host Diff: ftp_10.60.66.234|10.60.66.235|10.60.66.236|10.60.66.241|10.60.66.242|10.60.66.243 vs SFTP SV QOS, trunghn Phòng IP, Băng rộng Cố định và Truyền hình
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1298: FTP Host Diff: ftp_10.60.7.241 vs ftp 10.60.7.241 admin cho luongofo bikt
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1300: FTP Host Diff: ftp_10.254.129.93 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1293: FTP Host Diff: ftp_10.205.97.163 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1294: FTP Host Diff: ftp_10.205.97.164 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1295: FTP Host Diff: ftp_10.73.148.67 vs FTP
+2025-12-26 17:25:36.068 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1296: FTP Host Diff: ftp_10.73.148.68 vs FTP
+2025-12-26 17:25:36.084 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 220 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 17:25:36.085 [main] INFO  c.viettel.sync.service.SyncService -    -> [DELETE] Đã xóa 220 connection cũ.
+2025-12-26 17:25:36.109 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 220 dòng vào bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 17:25:36.110 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT/UPDATE] Đã ghi 220 connection.
+2025-12-26 17:25:36.135 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm safe (chỉ có ở target) [2024, 13, 1229, 15, 2000, 16, 17, 18, 19, 20, 22, 23, 24]
+2025-12-26 17:25:36.136 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm fix [1280, 1281, 1282, 1027, 1283, 1028, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1293, 13, 1294, 1039, 1295, 15, 1040, 1296, 16, 1041, 1297, 17, 1042, 1298, 18, 1043, 1299, 19, 1044, 1300, 20, 1045, 1046, 22, 23, 24, 921, 922, 441, 1229, 2000, 2024, 1258, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279]
+2025-12-26 17:25:36.138 [main] INFO  c.viettel.sync.service.SyncService - ✅ ĐỒNG BỘ THÀNH CÔNG TOÀN BỘ!
+2025-12-26 17:25:36.140 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:25:36.140 [main] INFO  com.viettel.sync.app.Main -           KẾT THÚC CHƯƠNG TRÌNH           
+2025-12-26 17:25:36.140 [main] INFO  com.viettel.sync.app.Main -        Tổng thời gian: 985 ms (0.985 giây)
+2025-12-26 17:25:36.140 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:40:33.968 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:40:33.970 [main] INFO  com.viettel.sync.app.Main -        BẮT ĐẦU TOOL ĐỒNG BỘ DỮ LIỆU       
+2025-12-26 17:40:33.971 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:40:33.973 [main] INFO  com.viettel.sync.app.Main - Schema Source: DATALAKE_CONFIG
+2025-12-26 17:40:33.974 [main] INFO  com.viettel.sync.app.Main - Schema Target: DATALAKE_CONFIG_TD
+2025-12-26 17:40:34.440 [main] INFO  c.viettel.sync.service.SyncService - ========== BẮT ĐẦU ĐỒNG BỘ (FINAL VERSION) ==========
+2025-12-26 17:40:34.441 [main] INFO  c.viettel.sync.service.SyncService - --- 1. SYNC TIME PARAM ---
+2025-12-26 17:40:34.611 [main] INFO  c.viettel.sync.service.SyncService - --- 2. SYNC CONNECTIONS ---
+2025-12-26 17:40:34.811 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ PHÁT HIỆN 56 XUNG ĐỘT/VẤN ĐỀ:
+2025-12-26 17:40:34.813 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 921: JDBC Auth Diff
+2025-12-26 17:40:34.813 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 441: FTP Host Diff: ftp_10.60.94.137 vs ftp 137 os_bccs_report namdx
+2025-12-26 17:40:34.813 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 922: FTP Host Diff: ftp_10.254.136.122 vs ftp 
+2025-12-26 17:40:34.813 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1027: FTP Host Diff: ftp_10.207.155.99:8889,10.207.155.100:8889,10.207.155.101:8889,10.207.155.102:8889 vs ELK
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1028: FTP Host Diff: ftp_10.60.170.37 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1030: FTP Host Diff: ftp_10.207.189.179 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1031: FTP Host Diff: ftp_10.240.184.51 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1032: FTP Host Diff: ftp_10.254.129.93 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1033: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1034: FTP Host Diff: ftp_10.255.62.21 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1035: FTP Host Diff: ftp_10.30.164.17 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1036: FTP Host Diff: ftp_10.58.15.36 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1037: FTP Host Diff: ftp_10.58.3.80 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1039: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1040: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1041: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1042: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1043: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1044: FTP Host Diff: ftp_10.60.94.222 vs FTP
+2025-12-26 17:40:34.814 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1045: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1046: FTP Host Diff: ftp_10.254.150.94 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1259: FTP Host Diff: ftp_10.240.184.52 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1260: FTP Host Diff: ftp_10.240.202.167 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1261: FTP Host Diff: ftp_10.240.202.173 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1262: FTP Host Diff: ftp_10.240.202.192 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1263: FTP Host Diff: ftp_10.240.202.4 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1264: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1265: FTP Host Diff: ftp_10.255.56.168 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1266: FTP Host Diff: ftp_10.255.62.22 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1267: FTP Host Diff: ftp_10.58.15.37 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1268: FTP Host Diff: ftp_10.58.3.111 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1269: FTP Host Diff: ftp_10.58.4.21 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1270: FTP Host Diff: ftp_10.58.4.26 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1271: FTP Host Diff: ftp_10.58.4.27 vs FTP
+2025-12-26 17:40:34.815 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1272: FTP Host Diff: ftp_10.58.4.32 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1273: FTP Host Diff: ftp_10.58.41.69 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1274: FTP Host Diff: ftp_10.58.46.149 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1275: FTP Host Diff: ftp_10.58.51.31 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1276: FTP Host Diff: ftp_10.60.94.137 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1277: FTP Host Diff: ftp_10.58.4.27 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1278: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1279: FTP Host Diff: ftp_192.168.176.59 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1280: FTP Host Diff: ftp_192.168.226.246 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1281: FTP Host Diff: ftp_192.168.4.210 vs FTP
+2025-12-26 17:40:34.816 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1297: FTP Host Diff: ftp_10.240.184.51 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1299: FTP Host Diff: ftp_10.208.67.133 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1282: FTP Host Diff: ftp_10.60.94.214 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1283: FTP Host Diff: ftp_10.60.94.214 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1258: FTP Host Diff: ftp_10.60.66.234|10.60.66.235|10.60.66.236|10.60.66.241|10.60.66.242|10.60.66.243 vs SFTP SV QOS, trunghn Phòng IP, Băng rộng Cố định và Truyền hình
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1298: FTP Host Diff: ftp_10.60.7.241 vs ftp 10.60.7.241 admin cho luongofo bikt
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1300: FTP Host Diff: ftp_10.254.129.93 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1293: FTP Host Diff: ftp_10.205.97.163 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1294: FTP Host Diff: ftp_10.205.97.164 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1295: FTP Host Diff: ftp_10.73.148.67 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1296: FTP Host Diff: ftp_10.73.148.68 vs FTP
+2025-12-26 17:40:34.817 [main] WARN  c.viettel.sync.service.SyncService - ❗ SAFE CHECK FAILED for ID 23 | URL=jdbc:oracle:thin:@(DESCRIPTION_LIST=
+    (LOAD_BALANCE=off)
+    (FAILOVER=on)
+    (DESCRIPTION=
+            (LOAD_BALANCE=on)(TRANSPORT_CONNECT_TIMEOUT=2)(RETRY_COUNT=2)
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.240.150.14)(PORT=1521))
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.240.150.17)(PORT=1521))
+        (CONNECT_DATA=(SERVER= DEDICATED)(SERVICE_NAME=vmnpdg))
+    )
+    (DESCRIPTION=
+            (LOAD_BALANCE=on)(TRANSPORT_CONNECT_TIMEOUT=2)(RETRY_COUNT=2)
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.208.86.191)(PORT=1521))
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.208.86.192)(PORT=1521))
+        (CONNECT_DATA=(SERVER= DEDICATED)(SERVICE_NAME=vmnpdg))
+)
+) | user=VBI_VTT | pass=nH8GfJfeUlN1elelUhMZ/g==
+2025-12-26 17:40:34.828 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 220 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 17:40:34.828 [main] INFO  c.viettel.sync.service.SyncService -    -> [DELETE] Đã xóa 220 connection cũ.
+2025-12-26 17:40:34.850 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 220 dòng vào bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 17:40:34.850 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT/UPDATE] Đã ghi 220 connection.
+2025-12-26 17:40:34.871 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm safe (chỉ có ở target) [2000, 16, 17, 18, 19, 20, 22, 2024, 24, 13, 1229, 15]
+2025-12-26 17:40:34.872 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm fix [1280, 1281, 1282, 1027, 1283, 1028, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1293, 13, 1294, 1039, 1295, 15, 1040, 1296, 16, 1041, 1297, 17, 1042, 1298, 18, 1043, 1299, 19, 1044, 1300, 20, 1045, 1046, 22, 23, 24, 921, 922, 441, 1229, 2000, 2024, 1258, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279]
+2025-12-26 17:40:34.874 [main] INFO  c.viettel.sync.service.SyncService - ✅ ĐỒNG BỘ THÀNH CÔNG TOÀN BỘ!
+2025-12-26 17:40:34.876 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 17:40:34.876 [main] INFO  com.viettel.sync.app.Main -           KẾT THÚC CHƯƠNG TRÌNH           
+2025-12-26 17:40:34.876 [main] INFO  com.viettel.sync.app.Main -        Tổng thời gian: 909 ms (0.909 giây)
+2025-12-26 17:40:34.876 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 18:06:02.730 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 18:06:02.732 [main] INFO  com.viettel.sync.app.Main -        BẮT ĐẦU TOOL ĐỒNG BỘ DỮ LIỆU       
+2025-12-26 18:06:02.732 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 18:06:02.735 [main] INFO  com.viettel.sync.app.Main - Schema Source: DATALAKE_CONFIG
+2025-12-26 18:06:02.737 [main] INFO  com.viettel.sync.app.Main - Schema Target: DATALAKE_CONFIG_TD
+2025-12-26 18:06:03.205 [main] INFO  c.viettel.sync.service.SyncService - ========== BẮT ĐẦU ĐỒNG BỘ (FINAL VERSION) ==========
+2025-12-26 18:06:03.205 [main] INFO  c.viettel.sync.service.SyncService - --- 1. SYNC TIME PARAM ---
+2025-12-26 18:06:03.376 [main] INFO  c.viettel.sync.service.SyncService - --- 2. SYNC CONNECTIONS ---
+2025-12-26 18:06:03.589 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ PHÁT HIỆN 52 XUNG ĐỘT/VẤN ĐỀ:
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 921: JDBC Auth Diff
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1027: JDBC Auth Diff
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1028: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1030: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1031: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1032: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1033: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1034: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.590 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1035: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1036: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1037: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1039: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1040: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1041: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1042: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1043: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1044: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1045: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1046: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1259: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1260: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1261: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.591 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1262: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1263: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1264: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1265: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1266: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1267: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1268: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1269: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1270: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1271: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1272: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1273: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1274: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1275: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1276: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1277: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.592 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1278: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1279: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1280: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1281: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1297: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1299: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1282: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1283: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1300: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1293: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1294: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1295: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT ID 1296: FTP Diff: url/user/pass không khớp
+2025-12-26 18:06:03.593 [main] WARN  c.viettel.sync.service.SyncService - ❗ SAFE CHECK FAILED for ID 23 | URL=jdbc:oracle:thin:@(DESCRIPTION_LIST=
+    (LOAD_BALANCE=off)
+    (FAILOVER=on)
+    (DESCRIPTION=
+            (LOAD_BALANCE=on)(TRANSPORT_CONNECT_TIMEOUT=2)(RETRY_COUNT=2)
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.240.150.14)(PORT=1521))
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.240.150.17)(PORT=1521))
+        (CONNECT_DATA=(SERVER= DEDICATED)(SERVICE_NAME=vmnpdg))
+    )
+    (DESCRIPTION=
+            (LOAD_BALANCE=on)(TRANSPORT_CONNECT_TIMEOUT=2)(RETRY_COUNT=2)
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.208.86.191)(PORT=1521))
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.208.86.192)(PORT=1521))
+        (CONNECT_DATA=(SERVER= DEDICATED)(SERVICE_NAME=vmnpdg))
+)
+) | user=VBI_VTT | pass=nH8GfJfeUlN1elelUhMZ/g==
+2025-12-26 18:06:03.607 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 157 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 18:06:03.607 [main] INFO  c.viettel.sync.service.SyncService -    -> [DELETE] Đã xóa 157 connection cũ.
+2025-12-26 18:06:03.628 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 224 dòng vào bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-26 18:06:03.629 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT/UPDATE] Đã ghi 224 connection.
+2025-12-26 18:06:03.652 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm safe (chỉ có ở target) [2000, 16, 17, 18, 19, 20, 22, 2024, 24, 13, 1229, 15]
+2025-12-26 18:06:03.653 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm fix [1280, 1281, 1282, 1027, 1283, 1028, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1293, 13, 1294, 1039, 1295, 15, 1040, 1296, 16, 1041, 1297, 17, 1042, 18, 1043, 1299, 19, 1044, 1300, 20, 1045, 1046, 22, 23, 24, 921, 1229, 2000, 2024, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279]
+2025-12-26 18:06:03.655 [main] INFO  c.viettel.sync.service.SyncService - ✅ ĐỒNG BỘ THÀNH CÔNG TOÀN BỘ!
+2025-12-26 18:06:03.657 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-26 18:06:03.658 [main] INFO  com.viettel.sync.app.Main -           KẾT THÚC CHƯƠNG TRÌNH           
+2025-12-26 18:06:03.658 [main] INFO  com.viettel.sync.app.Main -        Tổng thời gian: 927 ms (0.927 giây)
+2025-12-26 18:06:03.658 [main] INFO  com.viettel.sync.app.Main - ==========================================

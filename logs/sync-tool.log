@@ -1,0 +1,154 @@
+2025-12-29 13:49:03.366 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-29 13:49:03.367 [main] INFO  com.viettel.sync.app.Main -        BẮT ĐẦU TOOL ĐỒNG BỘ DỮ LIỆU       
+2025-12-29 13:49:03.368 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-29 13:49:03.370 [main] INFO  com.viettel.sync.app.Main - Schema Source: DATALAKE_CONFIG
+2025-12-29 13:49:03.371 [main] INFO  com.viettel.sync.app.Main - Schema Target: DATALAKE_CONFIG_TD
+2025-12-29 13:49:03.853 [main] INFO  c.viettel.sync.service.SyncService - ========== BẮT ĐẦU ĐỒNG BỘ (SAFE TABLE CHECK VERSION) ==========
+2025-12-29 13:49:03.853 [main] INFO  c.viettel.sync.service.SyncService - --- 1. SYNC TIME PARAM ---
+2025-12-29 13:49:04.028 [main] INFO  c.viettel.sync.service.SyncService - --- 2. SYNC CONNECTIONS ---
+2025-12-29 13:49:04.223 [main] INFO  c.v.sync.service.SyncLogicHelper - ℹ️ DUPLICATE JDBC Target ID 23URL jdbc:oracle:thin:@(DESCRIPTION_LIST=
+    (LOAD_BALANCE=off)
+    (FAILOVER=on)
+    (DESCRIPTION=
+            (LOAD_BALANCE=on)(TRANSPORT_CONNECT_TIMEOUT=2)(RETRY_COUNT=2)
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.240.150.14)(PORT=1521))
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.240.150.17)(PORT=1521))
+        (CONNECT_DATA=(SERVER= DEDICATED)(SERVICE_NAME=vmnpdg))
+    )
+    (DESCRIPTION=
+            (LOAD_BALANCE=on)(TRANSPORT_CONNECT_TIMEOUT=2)(RETRY_COUNT=2)
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.208.86.191)(PORT=1521))
+            (ADDRESS=(PROTOCOL=tcp)(HOST=10.208.86.192)(PORT=1521))
+        (CONNECT_DATA=(SERVER= DEDICATED)(SERVICE_NAME=vmnpdg))
+)
+)user VBI_VTT (same as Source ID 1365)
+2025-12-29 13:49:04.233 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ PHÁT HIỆN 2 XUNG ĐỘT/VẤN ĐỀ:
+2025-12-29 13:49:04.235 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT JDBC ID 921: Auth Diff
+2025-12-29 13:49:04.235 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT JDBC ID 1027: Auth Diff
+2025-12-29 13:49:04.248 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 207 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-29 13:49:04.249 [main] INFO  c.viettel.sync.service.SyncService -    -> [DELETE] Đã xóa 207 connection cũ.
+2025-12-29 13:49:04.272 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 273 dòng vào bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-29 13:49:04.272 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT/UPDATE] Đã ghi 273 connection.
+2025-12-29 13:49:04.293 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm safe (chỉ có ở target) [2000, 19, 20, 22, 2024, 24, 1229, 13, 15]
+2025-12-29 13:49:04.293 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm fix [1027, 2024, 1229, 13, 15, 2000, 16, 17, 18, 19, 20, 22, 24, 921]
+2025-12-29 13:49:04.293 [main] INFO  c.viettel.sync.service.SyncService - --- 3. SYNC PIPELINE (Auto Drop & Clean Logic + Check Table Safe) ---
+2025-12-29 13:49:04.536 [main] INFO  c.v.sync.repository.SourceRepository - Executing Pipeline Query (Active Only)...
+2025-12-29 13:49:05.984 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100390 | Table=f_data_sharing_log
+2025-12-29 13:49:05.984 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=73 | Table=rpt_chi_tiet_ban_hang_9123
+2025-12-29 13:49:05.985 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100327 | Table=tmp_bccs_report_rpt_change_infra
+2025-12-29 13:49:05.985 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100474 | Table=tmp_register_pre_sms
+2025-12-29 13:49:05.985 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100201 | Table=sub_usage_charge
+2025-12-29 13:49:05.985 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100168 | Table=account_contact
+2025-12-29 13:49:05.985 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100179 | Table=raw_action_profile
+2025-12-29 13:49:05.985 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=285 | Table=f_vtfree_register_pos_vt_active
+2025-12-29 13:49:05.986 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=365 | Table=f_data_sharing_log
+2025-12-29 13:49:05.986 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=369 | Table=f_po_policy_use
+2025-12-29 13:49:05.986 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100247 | Table=sub_thc_promotion_daily
+2025-12-29 13:49:05.986 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100479 | Table=d_cell_final
+2025-12-29 13:49:05.986 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=633 | Table=f_bccs_product_order_item
+2025-12-29 13:49:05.986 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=2028 | Table=sub_brandname
+2025-12-29 13:49:05.986 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=2029 | Table=brandname_identity
+2025-12-29 13:49:05.987 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=300472 | Table=f_vtfree_register_pre_vt
+2025-12-29 13:49:05.987 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100713 | Table=f_data_sharing_log
+2025-12-29 13:49:05.987 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=996 | Table=customer_updated
+2025-12-29 13:49:05.987 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=2055 | Table=f_bccsvas_auto_add_on
+2025-12-29 13:49:05.987 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=300192 | Table=tmp_bccs_sale_sub_rel_product
+2025-12-29 13:49:05.987 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=300202 | Table=tmp_f_viettelmoney_sources_infra
+2025-12-29 13:49:05.990 [main] INFO  c.viettel.sync.service.SyncService -    -> Safe Items: 
+ ID COMMAND 81 = [300036, 300164, 300037, 300165, 300038, 300166, 300039, 300167, 300160, 300033, 300161, 300034, 300162, 300035, 300163, 2055, 300044, 300172, 648, 300045, 300173, 300046, 300174, 300047, 300175, 300040, 300168, 300041, 300169, 300042, 300170, 300043, 300171, 300180, 300181, 300053, 120083, 300182, 300183, 300048, 300176, 100373, 300049, 300177, 300178, 100247, 300179, 300184, 300185, 300186, 292, 678, 100390, 300083, 300093, 1344, 300103, 72, 100168, 100179, 216, 217, 300255, 100327, 301283, 100201, 100713, 2028, 2029, 100083, 300023, 300156, 376, 300157, 300158, 300159, 100474, 380, 100479, 300283, 300027] 
+ ID CONFIG 82 =[300420, 300164, 300421, 300165, 300422, 300166, 300423, 300167, 300416, 300160, 300417, 300161, 300418, 300162, 300419, 300163, 2055, 300172, 300168, 302612, 100247, 285, 300192, 100390, 301612, 300202, 300212, 820, 300222, 300472, 300484, 73, 100168, 209, 210, 100179, 300631, 996, 100327, 300396, 100201, 100713, 300397, 300398, 300399, 300143, 2028, 300393, 300521, 365, 2029, 300394, 300395, 300404, 300405, 369, 300406, 300407, 300400, 300401, 300402, 300914, 300403, 300412, 300156, 300413, 300157, 633, 300414, 300158, 300415, 300159, 100474, 300408, 300152, 300409, 300153, 300410, 300154, 100479, 300411, 300155], 
+ ID COMMAND CREATE 71 =[300164, 300165, 300166, 300167, 300160, 300032, 300161, 300162, 300163, 395, 300168, 100373, 26, 27, 415, 301218, 100390, 300203, 56, 60, 300218, 2624, 2631, 100168, 100179, 100327, 100201, 300140, 100713, 300012, 300141, 300013, 300142, 300014, 300143, 300015, 300008, 300009, 300138, 300010, 300139, 300011, 300148, 300020, 300149, 300021, 300150, 300022, 300151, 300023, 300144, 300145, 300017, 300146, 300018, 300147, 300019, 300156, 300157, 300158, 300030, 100474, 300159, 300152, 300024, 300153, 300025, 300154, 100479, 300026, 300155]
+2025-12-29 13:49:06.024 [main] INFO  c.v.sync.core.GenericRepository -    -> [TRUNCATE] Đã làm sạch bảng DATALAKE_CONFIG_TD.D_CLEAN_FOLDER
+2025-12-29 13:49:06.052 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 1553 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_CONFIG
+2025-12-29 13:49:06.105 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 2317 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND
+2025-12-29 13:49:06.183 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 2583 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND_CREATE
+2025-12-29 13:49:06.252 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 504] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_vaspgw_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 13:49:06.260 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 801] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_activity_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 13:49:06.260 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 802] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_gem_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 13:49:06.276 [main] INFO  c.viettel.sync.service.SyncService -    -> Global Path Map: 1053 entries
+2025-12-29 13:49:06.347 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 219] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_vaspgw_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 13:49:06.399 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 403] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_activity_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 13:49:06.399 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 404] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_gem_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 13:49:06.413 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 100716] Path Skip: Cấu trúc quá phức tạp (2 $). Path: ${HDFS_URL}/raw_zone/telecom/vtt/qctt/SMSBRANDNAME_MAIN_PROG/${YYYYMMDD:DD-1}
+2025-12-29 13:49:06.550 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 1128 dòng vào bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND
+2025-12-29 13:49:06.588 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 1134 dòng vào bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_CONFIG
+2025-12-29 13:49:06.725 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 1850 dòng vào bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND_CREATE
+2025-12-29 13:49:06.740 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 948 dòng vào bảng DATALAKE_CONFIG_TD.D_CLEAN_FOLDER
+2025-12-29 13:49:06.740 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT NEW] Cmd=1128, Cfg=1134, Create=1850, Clean=948
+2025-12-29 13:49:06.740 [main] INFO  c.viettel.sync.service.SyncService -    -> [POST-PROCESS] Linking Auto-Generated Clean & Drop Commands...
+2025-12-29 13:49:07.279 [main] INFO  c.viettel.sync.service.SyncService -    -> [LINKED] Đã cập nhật liên kết cho 948 bản ghi Clean.
+2025-12-29 13:49:07.282 [main] INFO  c.viettel.sync.service.SyncService - ✅ ĐỒNG BỘ THÀNH CÔNG TOÀN BỘ!
+2025-12-29 13:49:07.285 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-29 13:49:07.285 [main] INFO  com.viettel.sync.app.Main -           KẾT THÚC CHƯƠNG TRÌNH           
+2025-12-29 13:49:07.285 [main] INFO  com.viettel.sync.app.Main -        Tổng thời gian: 3920 ms (3.92 giây)
+2025-12-29 13:49:07.285 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-29 17:11:27.492 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-29 17:11:27.494 [main] INFO  com.viettel.sync.app.Main -        BẮT ĐẦU TOOL ĐỒNG BỘ DỮ LIỆU       
+2025-12-29 17:11:27.494 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-29 17:11:27.496 [main] INFO  com.viettel.sync.app.Main - Schema Source: DATALAKE_CONFIG
+2025-12-29 17:11:27.497 [main] INFO  com.viettel.sync.app.Main - Schema Target: DATALAKE_CONFIG_TD
+2025-12-29 17:11:27.976 [main] INFO  c.viettel.sync.service.SyncService - ========== BẮT ĐẦU ĐỒNG BỘ (SAFE TABLE CHECK VERSION) ==========
+2025-12-29 17:11:27.976 [main] INFO  c.viettel.sync.service.SyncService - --- 1. SYNC TIME PARAM ---
+2025-12-29 17:11:28.163 [main] INFO  c.viettel.sync.service.SyncService - --- 2. SYNC CONNECTIONS ---
+2025-12-29 17:11:28.363 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ PHÁT HIỆN 2 XUNG ĐỘT/VẤN ĐỀ:
+2025-12-29 17:11:28.364 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT JDBC ID 921: Auth Diff
+2025-12-29 17:11:28.364 [main] WARN  c.viettel.sync.service.SyncService - ⚠️ CONFLICT JDBC ID 1027: Auth Diff
+2025-12-29 17:11:28.377 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 273 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-29 17:11:28.378 [main] INFO  c.viettel.sync.service.SyncService -    -> [DELETE] Đã xóa 273 connection cũ.
+2025-12-29 17:11:28.402 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 273 dòng vào bảng DATALAKE_CONFIG_TD.D_CONNECTION
+2025-12-29 17:11:28.403 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT/UPDATE] Đã ghi 273 connection.
+2025-12-29 17:11:28.423 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm safe (chỉ có ở target) [2000, 19, 20, 22, 2024, 24, 1229, 13, 15]
+2025-12-29 17:11:28.423 [main] INFO  c.viettel.sync.service.SyncService - Danh sách ID thuộc nhóm fix [1027, 2024, 1229, 13, 15, 2000, 16, 17, 18, 19, 20, 22, 24, 921]
+2025-12-29 17:11:28.423 [main] INFO  c.viettel.sync.service.SyncService - --- 3. SYNC PIPELINE (Auto Drop & Clean Logic + Check Table Safe) ---
+2025-12-29 17:11:28.666 [main] INFO  c.v.sync.repository.SourceRepository - Executing Pipeline Query (Active Only)...
+2025-12-29 17:11:29.701 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100390 | Table=f_data_sharing_log
+2025-12-29 17:11:29.702 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=73 | Table=rpt_chi_tiet_ban_hang_9123
+2025-12-29 17:11:29.702 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100327 | Table=tmp_bccs_report_rpt_change_infra
+2025-12-29 17:11:29.702 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100474 | Table=tmp_register_pre_sms
+2025-12-29 17:11:29.702 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100201 | Table=sub_usage_charge
+2025-12-29 17:11:29.702 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100168 | Table=account_contact
+2025-12-29 17:11:29.702 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100179 | Table=raw_action_profile
+2025-12-29 17:11:29.703 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=285 | Table=f_vtfree_register_pos_vt_active
+2025-12-29 17:11:29.703 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=1039 | Table= d_bts_station
+2025-12-29 17:11:29.703 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=365 | Table=f_data_sharing_log
+2025-12-29 17:11:29.703 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=369 | Table=f_po_policy_use
+2025-12-29 17:11:29.703 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100247 | Table=sub_thc_promotion_daily
+2025-12-29 17:11:29.704 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100479 | Table=d_cell_final
+2025-12-29 17:11:29.704 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=633 | Table=f_bccs_product_order_item
+2025-12-29 17:11:29.704 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=2028 | Table=sub_brandname
+2025-12-29 17:11:29.704 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=2029 | Table=brandname_identity
+2025-12-29 17:11:29.704 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=300472 | Table=f_vtfree_register_pre_vt
+2025-12-29 17:11:29.704 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=100713 | Table=f_data_sharing_log
+2025-12-29 17:11:29.704 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=996 | Table=customer_updated
+2025-12-29 17:11:29.705 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=488 | Table= raw_boc_report_01
+2025-12-29 17:11:29.705 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=2055 | Table=f_bccsvas_auto_add_on
+2025-12-29 17:11:29.705 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=300192 | Table=tmp_bccs_sale_sub_rel_product
+2025-12-29 17:11:29.705 [main] INFO  c.v.sync.service.SyncLogicHelper - 🛡️ KEEP TARGET-ONLY PIPELINE: ConfigId=300202 | Table=tmp_f_viettelmoney_sources_infra
+2025-12-29 17:11:29.707 [main] INFO  c.viettel.sync.service.SyncService -    -> Safe Items: 
+ ID COMMAND 83 = [300036, 300164, 300037, 300165, 300038, 300166, 300039, 300167, 300160, 300033, 300161, 300034, 300162, 300035, 300163, 2055, 300044, 300172, 648, 300045, 300173, 300046, 300174, 300047, 300175, 300040, 300168, 300041, 300169, 300042, 300170, 300043, 300171, 300180, 300181, 300053, 120083, 300182, 300183, 300048, 300176, 100373, 300049, 300177, 300178, 100247, 300179, 300184, 300185, 300186, 292, 678, 100390, 300083, 300093, 1344, 300103, 72, 100168, 100179, 216, 217, 300255, 100327, 301283, 100201, 100713, 2028, 1389, 2029, 100083, 300023, 501, 300156, 376, 300157, 300158, 300159, 100474, 380, 100479, 300283, 300027] 
+ ID CONFIG 85 =[300420, 300164, 300421, 300165, 300422, 300166, 300423, 300167, 300416, 300160, 300417, 300161, 300418, 300162, 300419, 300163, 2055, 300172, 300168, 1039, 302612, 100247, 285, 300192, 100390, 301612, 300202, 300212, 820, 300222, 300472, 300484, 73, 100168, 209, 210, 100179, 300631, 996, 100327, 300396, 100201, 100713, 488, 300397, 300398, 300399, 300143, 2028, 300393, 300521, 365, 2029, 300394, 300395, 300404, 300405, 369, 300406, 300407, 300023, 300400, 300401, 300402, 300914, 300403, 300412, 300156, 300413, 300157, 633, 300414, 300158, 300415, 300159, 100474, 300408, 300152, 300409, 300153, 300410, 300154, 100479, 300411, 300155], 
+ ID COMMAND CREATE 72 =[300164, 300165, 300166, 300167, 300160, 300032, 300161, 300162, 300163, 395, 300168, 100373, 26, 27, 415, 301218, 100390, 300203, 56, 60, 300218, 2624, 2631, 100168, 203, 100179, 100327, 100201, 300140, 100713, 300012, 300141, 300013, 300142, 300014, 300143, 300015, 300008, 300009, 300138, 300010, 300139, 300011, 300148, 300020, 300149, 300021, 300150, 300022, 300151, 300023, 300144, 300145, 300017, 300146, 300018, 300147, 300019, 300156, 300157, 300158, 300030, 100474, 300159, 300152, 300024, 300153, 300025, 300154, 100479, 300026, 300155]
+2025-12-29 17:11:29.766 [main] INFO  c.v.sync.core.GenericRepository -    -> [TRUNCATE] Đã làm sạch bảng DATALAKE_CONFIG_TD.D_CLEAN_FOLDER
+2025-12-29 17:11:29.785 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 1131 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_CONFIG
+2025-12-29 17:11:29.814 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 1126 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND
+2025-12-29 17:11:29.862 [main] INFO  c.v.sync.core.GenericRepository -    -> [DELETE] Đã xóa 1852 dòng rác khỏi bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND_CREATE
+2025-12-29 17:11:29.914 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 504] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_vaspgw_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 17:11:29.923 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 801] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_activity_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 17:11:29.923 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 802] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_gem_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 17:11:29.940 [main] INFO  c.viettel.sync.service.SyncService -    -> Global Path Map: 1050 entries
+2025-12-29 17:11:30.015 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 219] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_vaspgw_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 17:11:30.067 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 403] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_activity_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 17:11:30.067 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 404] Path Skip: Cấu trúc quá phức tạp (2 $). Path: /raw_zone/telecom/vtt/vas/vaspgw/f_gem_voice_brandname_sub/temp/${YYYYMMDD}/${YYYYMMDDHH24MMSS}
+2025-12-29 17:11:30.080 [main] WARN  c.v.sync.service.DataTransformer - ⚠️ [CONFIG ID 100716] Path Skip: Cấu trúc quá phức tạp (2 $). Path: ${HDFS_URL}/raw_zone/telecom/vtt/qctt/SMSBRANDNAME_MAIN_PROG/${YYYYMMDD:DD-1}
+2025-12-29 17:11:30.212 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 1126 dòng vào bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND
+2025-12-29 17:11:30.245 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 1131 dòng vào bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_CONFIG
+2025-12-29 17:11:30.373 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 1846 dòng vào bảng DATALAKE_CONFIG_TD.D_DB_2_HDFS_COMMAND_CREATE
+2025-12-29 17:11:30.393 [main] INFO  c.v.sync.core.GenericRepository -    -> [INSERT] Đã chèn 945 dòng vào bảng DATALAKE_CONFIG_TD.D_CLEAN_FOLDER
+2025-12-29 17:11:30.393 [main] INFO  c.viettel.sync.service.SyncService -    -> [INSERT NEW] Cmd=1126, Cfg=1131, Create=1846, Clean=945
+2025-12-29 17:11:30.393 [main] INFO  c.viettel.sync.service.SyncService -    -> [POST-PROCESS] Linking Auto-Generated Clean & Drop Commands...
+2025-12-29 17:11:30.952 [main] INFO  c.viettel.sync.service.SyncService -    -> [LINKED] Đã cập nhật liên kết cho 945 bản ghi Clean.
+2025-12-29 17:11:30.954 [main] INFO  c.viettel.sync.service.SyncService - ✅ ĐỒNG BỘ THÀNH CÔNG TOÀN BỘ!
+2025-12-29 17:11:30.957 [main] INFO  com.viettel.sync.app.Main - ==========================================
+2025-12-29 17:11:30.957 [main] INFO  com.viettel.sync.app.Main -           KẾT THÚC CHƯƠNG TRÌNH           
+2025-12-29 17:11:30.957 [main] INFO  com.viettel.sync.app.Main -        Tổng thời gian: 3465 ms (3.465 giây)
+2025-12-29 17:11:30.957 [main] INFO  com.viettel.sync.app.Main - ==========================================
