@@ -8,7 +8,9 @@ import org.slf4j.LoggerFactory;
 
 import java.net.URI;
 import java.sql.Timestamp;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,43 +18,33 @@ public class DataTransformer {
     private static final Logger logger = LoggerFactory.getLogger(DataTransformer.class);
 
     // Pattern IP dùng chung
-    private static final Pattern IP_PATTERN = Pattern.compile("^\\d{1,3}(\\.\\d{1,3}){3}$");
+    private static final Pattern IP_SEARCH_PATTERN = Pattern.compile("\\b\\d{1,3}(\\.\\d{1,3}){3}\\b");
 
     // --- CÁC HÀM TIỆN ÍCH DÙNG CHUNG (PUBLIC) ---
 
     public static boolean isFtpUrl(String url) {
         if (url == null) return false;
         String trimmed = url.trim();
-
-        String ipv4Regex = "^\\d{1,3}(\\.\\d{1,3}){3}$";
-
-        boolean isIpv4Only = trimmed.matches(ipv4Regex);
-
         boolean containsLetter = trimmed.matches(".*[a-zA-Z].*");
-
-        return isIpv4Only && !containsLetter;
+        return !containsLetter;
     }
 
 
-    public static String extractHostOrIp(String url) {
-        if (url == null) return "";
-        String cleanUrl = url.trim();
+    public static Set<String> extractAllIps(String url) {
+        Set<String> ips = new HashSet<>();
+        if (url == null || url.isBlank()) return ips;
 
-        Matcher ipMatcher = IP_PATTERN.matcher(cleanUrl);
-        if (ipMatcher.matches()) return cleanUrl;
-
-        if (cleanUrl.toLowerCase().startsWith("ftp://")) {
-            try {
-                URI uri = new URI(cleanUrl);
-                return uri.getHost() != null ? uri.getHost() : cleanUrl;
-            } catch (Exception e) {
-                int start = cleanUrl.indexOf("://") + 3;
-                int end = cleanUrl.indexOf("/", start);
-                if (end == -1) end = cleanUrl.length();
-                return cleanUrl.substring(start, end);
-            }
+        Matcher matcher = IP_SEARCH_PATTERN.matcher(url);
+        while (matcher.find()) {
+            ips.add(matcher.group());
         }
-        return cleanUrl;
+        return ips;
+    }
+
+    public static String extractFirstIp(String url) {
+        Set<String> ips = extractAllIps(url);
+        if (ips.isEmpty()) return "";
+        return ips.iterator().next();
     }
 
     // --- CÁC HÀM LOGIC PRIVATE (GIỮ NGUYÊN TỪ FILE CŨ CỦA BẠN) ---
@@ -118,10 +110,8 @@ public class DataTransformer {
         if (isFtp) {
             // LOGIC FTP
             finalDriver = "";
-            // Tự động sinh tên ftp_IP tại đây
-            String host = extractHostOrIp(url);
+            String host = extractFirstIp(url);
             finalConnName = "ftp_" + host;
-
         } else {
             // LOGIC JDBC
             finalDriver = detectDriver(url);
